@@ -24,9 +24,9 @@ embeddings = TogetherEmbeddings(
 
 # Function to send email notification to manager
 def send_email_notification(review_data):
-    sender_email = "intellgoyal@gmail.com"
-    sender_password = "zmcp wvix gdvn hdjo"
-    manager_email = "dhruvg096@gmail.com"
+    sender_email = "<SENDER EMAIL-ID"
+    sender_password = "<APP PASSWORD>"
+    manager_email = "<MANAGER EMAIL-ID"
     
     # Create message
     msg = MIMEMultipart()
