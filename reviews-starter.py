@@ -8,7 +8,7 @@ from together import Together
 
 # Set API keys
 if not os.getenv("TOGETHER_API_KEY"):
-    os.environ["TOGETHER_API_KEY"] = "466374da823b330f9c3220e7a00338f785e19267c3d73d1b46d5418eeeb2df20"
+    os.environ["TOGETHER_API_KEY"] = "<API KEY>"
 
 # Load and prepare data
 def load_data(file_path):
@@ -68,7 +68,7 @@ def setup_pinecone(api_key, index_name, dimension):
         print(f"Index may already exist or another error occurred: {e}")
     
     # Connect to index
-    index = pc.Index(host="https://hotel-reviews-f6ut8af.svc.aped-4627-b74a.pinecone.io")
+    index = pc.Index(host="<HOST URL>")
     return index
 
 # Upload vectors to Pinecone
@@ -114,7 +114,7 @@ def analyze_sentiment(reviews_text):
 def main():
     # Configuration
     file_path = 'AI-Guest-Experience-Infosys/resources/reviews_data.xlsx'
-    pinecone_api_key = 'pcsk_6QU3Wn_TYSERjoUfwFhw9NqavXRWdHzEBfp2gJz61SgHAZn9YJ9qDLYXNgKsJFJXpewH1M'
+    pinecone_api_key = '<API KEY>'
     index_name = 'hotel-reviews'
     dimension = 768
     
