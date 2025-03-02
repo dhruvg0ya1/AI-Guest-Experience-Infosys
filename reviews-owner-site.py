@@ -6,14 +6,14 @@ from together import Together
 import os
 
 # Set environment variables 
-os.environ["TOGETHER_API_KEY"] = '466374da823b330f9c3220e7a00338f785e19267c3d73d1b46d5418eeeb2df20'
+os.environ["TOGETHER_API_KEY"] = '<API KEY>'
 
 # Load data
 df = pd.read_excel('AI-Guest-Experience-Infosys/resources/reviews_data.xlsx')
 
 # Initialize Pinecone
-pc = Pinecone(api_key='pcsk_6QU3Wn_TYSERjoUfwFhw9NqavXRWdHzEBfp2gJz61SgHAZn9YJ9qDLYXNgKsJFJXpewH1M')
-index = pc.Index(host="https://hotel-reviews-f6ut8af.svc.aped-4627-b74a.pinecone.io")
+pc = Pinecone(api_key='<API KEY>)
+index = pc.Index(host="<HOST URL>")
 
 # Initialize Together embedding model with proper API key
 embeddings = TogetherEmbeddings(
