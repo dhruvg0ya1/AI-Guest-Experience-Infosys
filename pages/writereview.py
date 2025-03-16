@@ -125,9 +125,10 @@ with st.form("review_form"):
                 # Convert review_id to standard Python int
                 new_review_id = int(new_review_id)
 
-                # Current date in format YYYYMMDD
-                today = datetime.now()
-                date_str = int(today.strftime("%Y%m%d"))
+                # Store current date and time as a proper datetime object
+                current_datetime = datetime.now()
+                # Format for display or other purposes
+                date_str_display = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
                 
                 # Create new row for database
                 new_review = {
@@ -136,7 +137,8 @@ with st.form("review_form"):
                     'room_number': room_number,
                     'Review': review,
                     'Rating': rating,
-                    'review_date': date_str,
+                    'review_date': current_datetime,  # Store as datetime object
+                    'review_date_str': date_str_display,  # Human-readable string version
                     'currently_staying': currently_staying,
                     'sentiment_score': sentiment_info['score'],
                     'sentiment_label': sentiment_info['sentiment_label']
@@ -154,7 +156,7 @@ with st.form("review_form"):
                     'customer_id': customer_id,
                     'room_number': room_number,
                     'Rating': rating,
-                    'review_date': date_str,
+                    'review_date_str': date_str_display,
                     'currently_staying': currently_staying,
                     'sentiment_score': sentiment_info['score'],
                     'sentiment_label': sentiment_info['sentiment_label']
@@ -172,6 +174,7 @@ with st.form("review_form"):
                 )
                 
                 st.success("Your review has been submitted successfully!")
+                st.info(f"Review submitted on: {date_str_display}")
                 
                 # Display sentiment information
                 sentiment_color = "red" if sentiment_info['is_negative'] else "green"
