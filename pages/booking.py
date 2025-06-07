@@ -22,7 +22,7 @@ def show():
     """, unsafe_allow_html=True)
 
     # Initialize MongoDB connection
-    client = MongoClient("mongodb+srv://dhruvg0yal:r2XvD62cYiKHJ8Yh@cluster0.ghmci.mongodb.net/")
+    client = MongoClient("[YOUR MONGODB CLIENT LINK]")
     db = client["hotel_guests"]
     bookings_collection = db["bookings_data"]
 
