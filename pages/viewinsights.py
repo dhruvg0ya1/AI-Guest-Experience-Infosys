@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 
 # MongoDB Connection
-client = MongoClient("mongodb+srv://dhruvg0yal:r2XvD62cYiKHJ8Yh@cluster0.ghmci.mongodb.net/")
+client = MongoClient("[YOUR MONGODB CLIENT LINK]")
 db = client["hotel_guests"]
 
 # Load Data
