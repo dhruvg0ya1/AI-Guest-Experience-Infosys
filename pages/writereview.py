@@ -24,7 +24,7 @@ embeddings = TogetherEmbeddings(
     together_api_key=os.environ["TOGETHER_API_KEY"]
 )
 # Initialize MongoDB connection
-client = MongoClient("mongodb+srv://dhruvg0yal:r2XvD62cYiKHJ8Yh@cluster0.ghmci.mongodb.net/")
+client = MongoClient("[YOUR MONGODB CLIENT LINK]")
 db = client["hotel_guests"]
 reviews_collection = db["reviews_data"]
 
