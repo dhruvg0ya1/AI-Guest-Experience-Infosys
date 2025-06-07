@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import pandas as pd
 
-client = MongoClient("mongodb+srv://dhruvg0yal:r2XvD62cYiKHJ8Yh@cluster0.ghmci.mongodb.net/")
+client = MongoClient("[YOUR MONGODB CLIENT LINK]")
 
 db = client["hotel_guests"]
 
