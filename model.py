@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, log_loss
 import matplotlib.pyplot as plt
 
 # MongoDB Connection
-client = MongoClient("mongodb+srv://dhruvg0yal:r2XvD62cYiKHJ8Yh@cluster0.ghmci.mongodb.net/")
+client = MongoClient("[YOUR MONGODB CLIENT LINK]")
 db = client["hotel_guests"]
 collection = db["dining_info"]
 df_from_mongo = pd.DataFrame(list(collection.find()))
