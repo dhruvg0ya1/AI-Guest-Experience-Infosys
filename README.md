@@ -51,3 +51,12 @@ first run. `data_to_mongo.py` seeds the database from `resources/`.
 
 Built during the Infosys Springboard AI internship, Feb-Mar 2025. Slides are in
 `Presentation_AI_Guest_Experience.pdf`; sample outputs in `outputs.md`.
+
+
+## Interface Screenshots
+
+![AI Guest Experience UI](./screenshots/01_hotel_guest_experience_portal.png)
+
+## Video Walkthrough
+
+A full 1080p Loom-style product walkthrough is available at [`videos/loom_demo_walkthrough.mp4`](./videos/loom_demo_walkthrough.mp4).
