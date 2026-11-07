@@ -14,10 +14,10 @@ dashboard, in one Streamlit app backed by MongoDB.
 
 | Feature | Detail |
 |---|---|
-| **Dish recommendations** | XGBoost model over 16 features, running at **3x baseline accuracy** and driving a **28% lift** in dining sales through targeted discounts and automated email campaigns |
-| **Semantic review search** | 768-dimension BERT embeddings served through Pinecone with LangChain over **2,000+ reviews**, returning the top-5 matches for any query with a generated sentiment summary. Cut manual review analysis time **95%** |
-| **Real-time alerting** | TextBlob sentiment on incoming reviews notifies managers of negative feedback while the guest is still on site, cutting issue-resolution time **60%** |
-| **Analytics dashboard** | Plotly views over **20,000+ records** across cuisine, demographics and peak hours, accelerating decisions **65%** |
+| **Dish recommendations** | XGBoost model over **29 features** built from **10,000 dining orders** and **3,588 guest profiles**; its top-pick accuracy (0.18) is **2.7x random chance** across the dish catalogue, enough to rank targeted offers |
+| **Semantic review search** | **8,393 guest reviews** embedded as 768-dimension M2-BERT vectors in Pinecone, returning the top-5 matches for any query with a generated sentiment summary |
+| **Negative-review alerts** | Sentiment on each new review emails managers about negative feedback |
+| **Analytics dashboard** | Plotly views over **20,000+ records** (10,000 dining orders + 10,097 bookings) across cuisine, demographics and peak hours |
 
 ## Layout
 
