@@ -14,7 +14,7 @@ dashboard, in one Streamlit app backed by MongoDB.
 
 | Feature | Detail |
 |---|---|
-| **Dish recommendations** | XGBoost model over **29 features** built from **10,000 dining orders** and **3,588 guest profiles**; its top-pick accuracy (0.18) is **2.7x random chance** across the dish catalogue, enough to rank targeted offers |
+| **Dish recommendations** | XGBoost model over **29 features** built from **10,000 dining orders** and **3,588 guest profiles**, ranking dishes for each guest to drive targeted offers |
 | **Semantic review search** | **8,393 guest reviews** embedded as 768-dimension M2-BERT vectors in Pinecone, returning the top-5 matches for any query with a generated sentiment summary |
 | **Negative-review alerts** | Sentiment on each new review emails managers about negative feedback |
 | **Analytics dashboard** | Plotly views over **20,000+ records** (10,000 dining orders + 10,097 bookings) across cuisine, demographics and peak hours |
