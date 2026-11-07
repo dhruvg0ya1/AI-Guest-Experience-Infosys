@@ -53,10 +53,10 @@ Built during the Infosys Springboard AI internship, Feb-Mar 2025. Slides are in
 `Presentation_AI_Guest_Experience.pdf`; sample outputs in `outputs.md`.
 
 
-## Interface Screenshots
+## Interface (mockup)
 
 ![AI Guest Experience UI](./screenshots/01_hotel_guest_experience_portal.png)
 
-## Video Walkthrough
+## Walkthrough (mockup)
 
-A full 1080p Loom-style product walkthrough is available at [`videos/loom_demo_walkthrough.mp4`](./videos/loom_demo_walkthrough.mp4).
+An animated mockup of the interface (rendered from HTML, not a screen recording of the running app) is at [`videos/loom_demo_walkthrough.mp4`](./videos/loom_demo_walkthrough.mp4).
