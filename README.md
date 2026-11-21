@@ -44,8 +44,9 @@ pip install -r requirements.txt
 streamlit run home.py
 ```
 
-Set your MongoDB connection string and API keys as environment variables before
-first run. `data_to_mongo.py` seeds the database from `resources/`.
+Set these environment variables before the first run: `PINECONE_API_KEY`, `TOGETHER_API_KEY`
+(review search) and `GMAIL_APP_PASSWORD` (the alert and confirmation emails), and put your MongoDB
+connection string where the code says `[YOUR MONGODB CLIENT LINK]`. `data_to_mongo.py` seeds the database from `resources/`.
 
 ## Context
 

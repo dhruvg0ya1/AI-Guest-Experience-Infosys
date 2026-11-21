@@ -12,10 +12,9 @@ from textblob import TextBlob
 from pymongo import MongoClient
 
 # Set environment variables 
-os.environ["TOGETHER_API_KEY"] = '466374da823b330f9c3220e7a00338f785e19267c3d73d1b46d5418eeeb2df20'
 
 # Initialize Pinecone
-pc = Pinecone(api_key='pcsk_6QU3Wn_TYSERjoUfwFhw9NqavXRWdHzEBfp2gJz61SgHAZn9YJ9qDLYXNgKsJFJXpewH1M')
+pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
 index = pc.Index(host="https://hotel-reviews-f6ut8af.svc.aped-4627-b74a.pinecone.io")
 
 # Initialize Together embedding model
@@ -43,7 +42,7 @@ def analyze_sentiment(review_text):
 # Function to send email notification to manager (ONLY IF THE GUEST IS CURRENTLY STAYING)
 def send_email_notification(review_data, sentiment_info):
     sender_email = "intellgoyal@gmail.com"
-    sender_password = "zmcp wvix gdvn hdjo"
+    sender_password = os.environ["GMAIL_APP_PASSWORD"]
     manager_email = "dhruvg096@gmail.com"
     
     # Create message

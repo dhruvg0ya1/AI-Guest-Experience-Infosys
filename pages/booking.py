@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from datetime import date
 import pandas as pd
@@ -198,7 +199,7 @@ def show():
                 try:
                     # Email credentials
                     sender_email = "intellgoyal@gmail.com"
-                    sender_password = "zmcp wvix gdvn hdjo"
+                    sender_password = os.environ["GMAIL_APP_PASSWORD"]
                     
                     # Create message
                     msg = MIMEMultipart()
